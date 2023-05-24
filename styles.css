@@ -47,9 +47,10 @@ body{
 }
 
 .logo{
-    width: 120px;
+    width: 115px;
     margin: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .sidebar-icons{
@@ -74,4 +75,11 @@ body{
 .sidebar-item-clicked{
     border-left:solid 6px #33e1ec;
     background-color: var(--light-accent-dark-color) ;
+}
+
+.label{
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
