@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: dashed 2px red;
+}
+
+:root{
+    --dark-color:#1f1e2c;
+    --light-dark-color:#2d2d45;
+    --primary-color:#33e1ec;
+    --secondary-color:#ffffff;
+}
+
+html{
+    font-size: 6.25%;
+}
+
+body{
+    font-size: 16rem;
+}
+
