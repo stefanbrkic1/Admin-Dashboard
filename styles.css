@@ -41,6 +41,9 @@ body{
 .main{
     background-color: var(--dark-color);
     grid-area: 2 / 2 / -1 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
 }
 
 .sidebar{
@@ -79,11 +82,33 @@ body{
     background-color: var(--light-accent-dark-color) ;
 }
 
-.label{
+.label1{
     color: var(--secondary-color);
     font-weight: bold;
-    margin-left: 15px;
     margin-bottom: 15px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+.label1::after{
+    content: 'Your projects';
+}
+
+.label2{
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: absolute;
+    right: 457px;
+    top: 20px;
+}
+.label2::after{
+    content: 'See all';
+}
+
+.label2:hover{
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 input{
@@ -178,4 +203,50 @@ input{
 
 .action-buttons{
     justify-self: end;
+}
+
+.main-content{
+    padding: 25px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: var(--light-accent-dark-color);
+    border-radius: 10px;
+    border-left: 11px solid var(--primary-color);
+    min-width: 250px;
+    padding: 13px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    cursor: pointer;
+    transition: ease-in-out 50ms;
+}
+
+.card:hover{
+    background-color: var(--primary-color);
+}
+.card-header{
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 16rem;
+}
+
+.card-para{
+    color: var(--secondary-color);
+    font-size: 14rem;
+    margin-top: 6px;
+}
+
+.card-icons{
+    align-self: end;
+    justify-self: end;
+}
+
+.icons{
+    margin: 10px;
+    cursor: pointer;
 }
