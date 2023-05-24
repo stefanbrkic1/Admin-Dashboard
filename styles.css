@@ -289,7 +289,6 @@ input {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    padding: 13px;
 }
 
 .ann-heading {
@@ -353,4 +352,18 @@ input {
     display: flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
+    padding: 11px;
+}
+
+.trend-item:hover{
+    background-color: var(--light-dark-color);
+}
+
+.border-radius1{
+    border-radius: 10px 10px 0px 00px;
+}
+
+.border-radius2{
+    border-radius: 0px 0px 10px 10px; 
 }
