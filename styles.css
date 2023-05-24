@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    border: dashed 2px red;
+  /*  border: dashed 2px red; */
+    font-family: 'Lato', sans-serif;
 }
 
 :root{
     --dark-color:#1f1e2c;
+    --secondary-dark-color:#28283a;
     --light-dark-color:#2d2d45;
     --primary-color:#33e1ec;
     --secondary-color:#ffffff;
@@ -19,3 +23,24 @@ body{
     font-size: 16rem;
 }
 
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 2fr 3fr 3fr 3fr;
+}
+
+.header{
+    background-color: var(--secondary-dark-color);
+}
+
+.main{
+    background-color: var(--dark-color);
+    grid-area: 2 / 2 / -1 / -1;
+}
+
+.sidebar{
+    background-color: var(--light-dark-color);
+    grid-area: 1 / 1 / -1 / 2;
+}
