@@ -1,6 +1,6 @@
 const sidebarItems = Array.from(document.querySelectorAll('.sidebar-item'));
 const sidebar=document.getElementById('sidebarMenu');
-const sidebarToggle=document.getElementById('sidebarIcon');
+const sidebarToggle=document.getElementById('Open');
 
 sidebarItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -14,9 +14,10 @@ sidebarItems.forEach(item => {
     });
 });
 
-
-document.onclick = function(e){
-    if(e.target.id !== 'sidebarMenu' && e.target.id !== 'sidebarIcon'){
-        
+sidebarToggle.addEventListener('change', function () {
+    if (sidebarToggle.checked) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
     }
-}
+  });
