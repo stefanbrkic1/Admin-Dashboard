@@ -473,7 +473,7 @@ body {
     .profile-text{
         display: none;
     }
-    .bell {
+    i.bell {
         display: none;
     }
     .circle{
@@ -490,7 +490,7 @@ body {
     .profile-greeting{
         justify-content: space-between;
     }
-    .fa-magnifying-glass{
+    i.fa-magnifying-glass{
         display: none;
     }
     .search-input{
