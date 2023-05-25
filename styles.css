@@ -56,13 +56,13 @@ body {
     height: 64px;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
 }
 
 .logo {
     width: 115px;
     cursor: pointer;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .sidebar-icons {
@@ -384,21 +384,13 @@ body {
     top: 20px;
     left: 20px;
     cursor: pointer;
+    display: none;
 }
 #Open{
     position: absolute;
     top: 20px;
     left: 20px;
     display: none;
-}
-
-#Open:checked ~ #sidebarMenu{
-    transform: translateX(-300px);
-}
-
-#sidebarMenu{
-    transform: translateX(0px);
-    transition: transform 300ms ease-in-out;
 }
 
 .wrapper{
@@ -461,6 +453,15 @@ body {
     #sidebarMenu{
         transform: translateX(-500px);
         transition: transform 300ms ease-in-out;
+    }
+    .sidebarIcon{
+        display: block;
+    }
+    .logo-container{
+        justify-content: end;
+    }
+    .logo{
+        margin-right: 15px;
     }
   }
 
@@ -536,5 +537,14 @@ body {
     }
     .btn{
         width: 105px;
+    }
+    .sidebarIcon{
+        display: block;
+    }
+    .logo-container{
+        justify-content: end;
+    }
+    .logo{
+        margin-right: 15px;
     }
   }
