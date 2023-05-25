@@ -1,23 +1,31 @@
 const sidebarItems = Array.from(document.querySelectorAll('.sidebar-item'));
-const sidebar=document.getElementById('sidebarMenu');
-const sidebarToggle=document.getElementById('Open');
+const sidebarToggle = document.getElementById('Open');
+const header = document.getElementById('header');
+const main = document.getElementById('main');
 
 sidebarItems.forEach(item => {
-    item.addEventListener('click', () => {
-        item.classList.add('sidebar-item-clicked');
+  item.addEventListener('click', () => {
+    item.classList.add('sidebar-item-clicked');
 
-        sidebarItems.forEach(otherItem => {
-            if (otherItem !== item) {
-                otherItem.classList.remove('sidebar-item-clicked');
-            }
-        });
+    sidebarItems.forEach(otherItem => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('sidebar-item-clicked');
+      }
     });
+  });
 });
 
 sidebarToggle.addEventListener('change', function () {
-    if (sidebarToggle.checked) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  });
+  if (sidebarToggle.checked) {
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      header.classList.add('blur');
+    main.classList.add('blur');
+    }, 155);
+  } 
+  else {
+    document.body.style.overflow = 'auto';
+    header.classList.remove('blur');
+    main.classList.remove('blur');
+  }
+});
