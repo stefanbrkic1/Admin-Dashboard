@@ -1,5 +1,5 @@
 # Admin-Dashboard
-Admin dashboard web design using HTML and CSS. Click here [Link](https://stefanbrkic1.github.io/SignUp-Form/)
+Admin dashboard web design using HTML and CSS. Click here [Link](https://stefanbrkic1.github.io/Admin-Dashboard/)
 
 <!-- ABOUT THE PROJECT -->
 ## Preview

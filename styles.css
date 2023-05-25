@@ -426,44 +426,80 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .main-content{
-        padding: 25px;
-        display: grid;
-        grid-template: repeat(2, 1fr) / repeat(1, 1fr);
-        gap: 25px;
-        margin-top: 30px;
-    }
-    .card-ann{}
+    
   }
 
 @media only screen and (max-width: 767px) {
+    .container {
+        height: 100%;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1.1fr 8fr;
+        margin-top: 55px;
+    }
+    .header {
+        background-color: var(--secondary-dark-color);
+        grid-area: 1 / 1 / 2 / -1;
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        background-color: var(--dark-color);
+        grid-area: 2 / 1 / -1 / -1;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .sidebar {
+        position: absolute;
+        z-index: 19;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50vw;
+    }
+    .main-content {
+        padding: 25px;
+        display: grid;
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    .action-button-row{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .profile-text{
+        display: none;
+    }
+    .bell {
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
     #Open:checked ~ #sidebarMenu{
         transform: translateX(0px);
     }
+    
     #sidebarMenu{
         transform: translateX(-300px);
         transition: transform 300ms ease-in-out;
     }
-    .sidebar{
-        height: 100vh;
+    .profile-greeting{
+        justify-content: space-between;
     }
-    .card-ann{
+    .fa-magnifying-glass{
         display: none;
     }
-    .card-trend{
-        display: none;
+    .search-input{
+        margin: 0;
+        margin-bottom: 13px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
     }
-    .label2{
-        display: none;
+    .btn{
+        width: 105px;
     }
-    .label3{
-        display: none;
-    }
-    .header{
-        display: none;
-    }
-    .main{
-        display: none;
-    }
-    
   }

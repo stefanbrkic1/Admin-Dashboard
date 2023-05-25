@@ -1,4 +1,6 @@
 const sidebarItems = Array.from(document.querySelectorAll('.sidebar-item'));
+const sidebar=document.getElementById('sidebarMenu');
+const sidebarToggle=document.getElementById('sidebarIcon');
 
 sidebarItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -11,3 +13,10 @@ sidebarItems.forEach(item => {
         });
     });
 });
+
+
+document.onclick = function(e){
+    if(e.target.id !== 'sidebarMenu' && e.target.id !== 'sidebarIcon'){
+        
+    }
+}
