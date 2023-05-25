@@ -425,11 +425,16 @@ body {
     margin-top: -9px;
 }
 
-@media (max-width: 1024px){
-    .sidebar{
-        max-width: 200px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-content{
+        padding: 25px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+        gap: 25px;
+        margin-top: 30px;
     }
-}
+    .card-ann{}
+  }
 
 @media only screen and (max-width: 767px) {
     #Open:checked ~ #sidebarMenu{
@@ -441,7 +446,6 @@ body {
     }
     .sidebar{
         height: 100vh;
-        width: ;
     }
     .card-ann{
         display: none;
@@ -459,21 +463,7 @@ body {
         display: none;
     }
     .main{
-        background-color: var(--dark-color);
-        grid-area: 1 / 1 / -1 / -1;
-        display: grid;
-        grid-template-columns: 1fr;
-        position: relative;
-    }
-    .main-content {
-        padding: 10px;
-        display: grid;
-        grid-template: repeat(6, 1fr) / 1fr;
-        gap: 15px;
-        margin-top: 75px;
-    }
-    .label1{
-        top: 55px;
+        display: none;
     }
     
   }
