@@ -4,7 +4,7 @@ Admin dashboard web design using HTML and CSS. Click here [Link](https://stefanb
 <!-- ABOUT THE PROJECT -->
 ## Preview
 
-![SignUpPreview](img/DashboardPage.png)
+![SignUpPreview](img/Dashboard.png)
 ![SignUpPreviewDevices](img/Devices.png)
 
 > **Note**  
@@ -36,7 +36,7 @@ Admin dashboard web design using HTML and CSS. Click here [Link](https://stefanb
 
 ## Features
 - Modern UI/UX design
-- **Responsive** for both **Desktop** & **Mobile**
+- **Responsive** for all devices **Desktop** , **Tablet** & **Mobile**
 
 <br>
 
